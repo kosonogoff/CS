@@ -14,4 +14,4 @@ Console.Write("Введите значение Y для второй точки:
 double y2 = Convert.ToInt32(Console.ReadLine());
 
 double result = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-Console.WriteLine($"Расстояние между точками равняется {result}");
+Console.WriteLine($"Расстояние между точками равняется {Math.Round(result, 2)}");

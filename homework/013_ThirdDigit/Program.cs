@@ -25,7 +25,7 @@ else if (number >= 1000)
     
     int result = number / 10;
     
-    while (result >= 9999)
+    while (result >= 999)
     {
         result = result / 10;
     }

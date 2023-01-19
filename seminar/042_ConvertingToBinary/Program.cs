@@ -19,4 +19,4 @@ string ConvertingToBinary(int decimalNumber)
 
 int number = ReadNumber("Введите число: ");
 var binary = ConvertingToBinary(number);
-Console.WriteLine($"{number} в двоичной системе выглядит как {binary s}");
+Console.WriteLine($"{number} в двоичной системе выглядит как {binary}");

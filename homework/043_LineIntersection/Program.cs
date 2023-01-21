@@ -32,8 +32,8 @@ if (k1 == k2) // пропишем условие для параллельных
 else
 {
     double[] point = PointOfIntersection (b1, k1, b2, k2);
-    // Console.WriteLine ($"The point of intersection lies at the point: ({string.Join("; ", point)})");
-    Console.Write ("The point of intersection lies at the point: (");
+    // Console.WriteLine ($"The point of lines intersection: ({string.Join("; ", point)})");
+    Console.Write ("The point of lines intersection: (");
     Console.Write ($"{point[0]:f4}; "); // выводим координату X
     Console.Write ($"{point[1]:f4})"); // выводим координату Y
 }

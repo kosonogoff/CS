@@ -29,7 +29,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-double GetAverage (int[,] matrix, int columns)
+double GetAverage(int[,] matrix, int columns)
 {
     double result = 0;
     double count = 0;

@@ -9,7 +9,7 @@ double[,] GetMatrix(int rows, int columns, int min, int max)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = Convert.ToDouble(new Random().Next(min, max)) / 100; 
+            matrix[i, j] = Convert.ToDouble(new Random().Next(min, max)) / 100;
         }
     }
     return matrix;
@@ -23,7 +23,7 @@ void PrintMatrix(double[,] matrix)
         {
             double number = matrix[i, j];
             // для красоты вывода на экран добавим пробел перед положительными числами
-            if(number >= 0) Console.Write($" {number:f2} "); 
+            if (number >= 0) Console.Write($" {number:f2} ");
             else Console.Write($"{number:f2} ");
         }
         Console.WriteLine();
@@ -36,7 +36,7 @@ int ReadNumber(string message)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int rows = ReadNumber("Введите количечство строк в матрице: ");
+int rows = ReadNumber("Введите количество строк в матрице: ");
 int columns = ReadNumber("Введите количество столбцов в матрице: ");
 int min = -1000;
 int max = 1000;

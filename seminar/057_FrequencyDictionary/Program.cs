@@ -83,8 +83,8 @@ int MaxElement(int[,] matrix)
     return max;
 }
 
-int rows = new Random().Next(1, 10);
-int columns = new Random().Next(1, 10);
+int rows = new Random().Next(2, 10);
+int columns = new Random().Next(2, 10);
 int min = 0;
 int max = 9;
 

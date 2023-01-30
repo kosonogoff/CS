@@ -28,7 +28,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[,] Multiplication(int[,] one, int[,] two) /// НЕ РАБОТАЕТ!!!
+int[,] Multiplication(int[,] one, int[,] two)
 {
     int[,] multi = new int[one.GetLength(0), two.GetLength(1)];
 
@@ -40,9 +40,9 @@ int[,] Multiplication(int[,] one, int[,] two) /// НЕ РАБОТАЕТ!!!
 
             for (int k = 0; k < one.GetLength(1); k++)
             {
-                sum = sum + (one[i, k] * two[k, i]);
+                sum = sum + (one[i, k] * two[k, j]);
             }
-            
+
             multi[i, j] = sum;
         }
     }

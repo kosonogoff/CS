@@ -2,8 +2,8 @@
 
 int ReadNumber(string message)
 {
-Console.Write(message);
-return Convert.ToInt32(Console.ReadLine());
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 string ConvertingToBinary(int decimalNumber)
@@ -17,6 +17,16 @@ string ConvertingToBinary(int decimalNumber)
     return binaryNumber;
 }
 
+void PrintBinaryRec(int n)
+{
+    if (n <= 0) return; // (!)сразу прописываем выход из рекурсии
+    PrintBinaryRec(n / 2); // рекурсивный вызов
+    Console.Write(n % 2);
+}
+
 int number = ReadNumber("Введите число: ");
 var binary = ConvertingToBinary(number);
-Console.WriteLine($"{number} в двоичной системе выглядит как {binary}");
+// Console.WriteLine($"Число {number} в двоичной системе выглядит как {binary}");
+
+Console.Write($"Число {number} в двоичной системе выглядит как: ");
+PrintBinaryRec(number);

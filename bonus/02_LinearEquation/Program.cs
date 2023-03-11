@@ -15,10 +15,11 @@ int PrintNumInArr(int[] array, int index)
 
 int[,] Eukleides(int[] array)
 {
-    int[,] matrix = new int[2, 10];
+    int[,] matrix = new int[2, 5];
     /*
     в первой строке будем хранить значения для m
     во второй строке будем хранить значения для n
+    максимум будем хранить по 5 значений
     нужно решить уравнения
     a * x + b * y = 1
     m = x + b * t
@@ -40,8 +41,8 @@ void PrintMatrix(int[,] matrix)
         {
             int number = matrix[i, j];
             // для красоты вывода на экран добавим пробел перед положительными числами
-            if (number >= 0) Console.Write($" {number}, ");
-            else Console.Write($"{number}, ");
+            if (number >= 0) Console.Write($" [{number}] ");
+            else Console.Write($"[{number}] ");
         }
         Console.WriteLine();
     }
